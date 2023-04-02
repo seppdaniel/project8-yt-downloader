@@ -10,7 +10,7 @@ def progress_bar(stream, chunk, bytes_remaining):
 def download_video(video_link):
     yt = YouTube('https://www.youtube.com/watch?v=' + video_link, on_progress_callback=progress_bar)
     ys = yt.streams.get_highest_resolution()
-    download_path = f'C:/Users/daniel.silva/Desktop/download-teste/{yt.title}.mp4'
+    download_path = f'C:/Users/Public/Videos/{}.mp4'.format(yt.title)
 
 
     with tqdm(total=ys.filesize, unit='B', unit_scale=True, ncols=100, bar_format='{l_bar}{bar}|') as t:
