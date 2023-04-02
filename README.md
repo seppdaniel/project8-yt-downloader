@@ -31,5 +31,5 @@ python youtube_downloader.py
 ```
 Os vídeos serão baixados e salvos na pasta C:\Users\Public\Videos com o título do vídeo como nome do arquivo.
 
-### Nota
+###Nota
 Este script é apenas para fins educacionais. Por favor, respeite os direitos autorais e as políticas de conteúdo do YouTube ao utilizar este projeto.
