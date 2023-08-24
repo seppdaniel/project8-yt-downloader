@@ -27,20 +27,11 @@ pip install pytube tqdm
 video_link = "https://www.youtube.com/watch?v=3VnGCVMMHQ4"
 download_video(video_link)
 ```
-
-```python
-video_links = [
-    'Fs3uBjTA70c',
-    'ExemploDeLink2',
-    'ExemploDeLink3',
-    # ... adicione mais links conforme necessário
-]
-```
 3. Execute o script youtube_downloader.py:
 ```
-python youtube_downloader.py
+python3 yt-downloader-v2.py
 ```
-Os vídeos serão baixados e salvos na pasta C:\Users\Public\Videos com o título do vídeo como nome do arquivo.
+Os vídeos serão baixados e salvos na pasta local, com uma pasta contendo o título do vídeo como nome padrão da pasta e do arquivo.
 
 ###Nota
 Este script é apenas para fins educacionais. Por favor, respeite os direitos autorais e as políticas de conteúdo do YouTube ao utilizar este projeto.
