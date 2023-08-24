@@ -15,7 +15,18 @@ pip install pytube tqdm
 
 1. Clone ou baixe este repositório.
 
-2. Crie um arquivo chamado `video_links.py` na mesma pasta do script e defina a variável `video_links` com a lista de links de vídeos do YouTube que você deseja baixar. Por exemplo:
+2. Instale as dependências: pytube e tqdm
+
+3. Modifique o link referente ao vídeo desejado para download neste trecho:
+```python
+    with tqdm(total=ys.filesize, unit='B', unit_scale=True, ncols=100, bar_format='{l_bar}{bar}|') as t:
+        ys.download(download_path)
+        t.write(f'Download concluído: {yt.title}')
+
+# Link direto para o vídeo que será baixado
+video_link = "https://www.youtube.com/watch?v=3VnGCVMMHQ4"
+download_video(video_link)
+```
 
 ```python
 video_links = [
